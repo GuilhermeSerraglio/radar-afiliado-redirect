@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="pt-BR">
+<head><meta charset="utf-8"><title>Radar Afiliado</title></head>
+<body>
+  <p>Redirecionando a autorização para o Radar Afiliado local…</p>
+  <script>
+    const destino = new URL("http://127.0.0.1:8787/oauth/mercadolivre/callback");
+    destino.search = window.location.search;
+    window.location.replace(destino.toString());
+  </script>
+</body>
+</html>
